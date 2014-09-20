@@ -16,7 +16,6 @@
 		B9169DA519CD2B0C00AA20E4 /* CardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DA419CD2B0C00AA20E4 /* CardBackViewController.swift */; };
 		B9169DA719CD2B5A00AA20E4 /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DA619CD2B5A00AA20E4 /* FlashCard.swift */; };
 		B9169DA919CD7BDB00AA20E4 /* FlashCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DA819CD7BDB00AA20E4 /* FlashCardManager.swift */; };
-		B9169DAF19CD892E00AA20E4 /* CardNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DAE19CD892E00AA20E4 /* CardNewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		B9169DA419CD2B0C00AA20E4 /* CardBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBackViewController.swift; sourceTree = "<group>"; };
 		B9169DA619CD2B5A00AA20E4 /* FlashCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
 		B9169DA819CD7BDB00AA20E4 /* FlashCardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardManager.swift; sourceTree = "<group>"; };
-		B9169DAE19CD892E00AA20E4 /* CardNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 				B9169D8419CD17BE00AA20E4 /* AppDelegate.swift */,
 				B9169D8619CD17BE00AA20E4 /* CardFrontViewController.swift */,
 				B9169DA419CD2B0C00AA20E4 /* CardBackViewController.swift */,
-				B9169DAE19CD892E00AA20E4 /* CardNewViewController.swift */,
 				B9169DA819CD7BDB00AA20E4 /* FlashCardManager.swift */,
 				B9169DA619CD2B5A00AA20E4 /* FlashCard.swift */,
 				B9169D8819CD17BE00AA20E4 /* Main.storyboard */,
@@ -225,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9169D8719CD17BE00AA20E4 /* CardFrontViewController.swift in Sources */,
-				B9169DAF19CD892E00AA20E4 /* CardNewViewController.swift in Sources */,
 				B9169DA919CD7BDB00AA20E4 /* FlashCardManager.swift in Sources */,
 				B9169DA519CD2B0C00AA20E4 /* CardBackViewController.swift in Sources */,
 				B9169DA719CD2B5A00AA20E4 /* FlashCard.swift in Sources */,

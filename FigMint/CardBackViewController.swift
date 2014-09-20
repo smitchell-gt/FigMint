@@ -11,7 +11,6 @@ import UIKit
 class CardBackViewController: UIViewController {
     
     @IBOutlet weak var backTextField: UITextView!
-    var backText: String!
     var cardList: [FlashCard]!
     var currentCard: Int!
     
@@ -19,7 +18,7 @@ class CardBackViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        backTextField.text = backText
+        backTextField.text = cardList[currentCard].backText
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,9 +28,20 @@ class CardBackViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "BackSwipeUp" || segue.identifier == "BackSwipeDown" {
-            let newCard = segue.destinationViewController as CardNewViewController
+            let newCard = segue.destinationViewController as CardFrontViewController
+            newCard.isStart = false
             
-            
+            currentCard = currentCard.successor()
+            if (currentCard < cardList.endIndex) {
+                if (currentCard % 3 == 0) {
+                    newCard.endOfSet = true
+                }
+                newCard.cardList = cardList
+                newCard.currentCard = currentCard
+            }
+            else {
+                newCard.endOfList = true
+            }
         }
     }
     

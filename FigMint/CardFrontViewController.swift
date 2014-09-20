@@ -10,13 +10,11 @@ import UIKit
 
 class CardFrontViewController: UIViewController {
 
-    var cardList = [FlashCard]()
+    var cardList: [FlashCard]!
     var currentCard: Int!
-    var backText: String?
-    
-    let card1 = FlashCard(deck: "deck1")
-    let card2 = FlashCard(deck: "deck1")
-    let card3 = FlashCard(deck: "deck1")
+    var isStart: Bool = true
+    var endOfSet: Bool = false
+    var endOfList: Bool = false
     
     @IBOutlet weak var frontTextField: UITextView!
     
@@ -25,11 +23,21 @@ class CardFrontViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         
-        if (currentCard == 0) {
+        if (isStart) {
             addCards()
         }
         
-        setCard()
+        if (endOfSet && !endOfList) {
+            frontTextField.text = "Great job! Go to Menu? Load 3 More Cards?"
+        }
+        
+        else if (endOfList) {
+            frontTextField.text = "Wow, you finished all cards in your queue!\nGo to Menu?"
+        }
+        
+        else {
+            setCard()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,29 +45,47 @@ class CardFrontViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if (endOfList) {
+            if (identifier == "FrontSwipeLeft" || identifier == "FrontSwipeRight") {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "FrontSwipeLeft" || segue.identifier == "FrontSwipeRight" {
             let backCard = segue.destinationViewController as CardBackViewController
             
             if (cardList[currentCard].frontText != nil) {
-                backCard.backText = cardList[currentCard].backText
+                backCard.cardList = cardList
+                backCard.currentCard = currentCard
             }
         }
     }
     
     func addCards() {
+        
+        cardList = [FlashCard]()
+        
+        let card1 = FlashCard(deck: "deck1")
+        let card2 = FlashCard(deck: "deck1")
+        let card3 = FlashCard(deck: "deck1")
+        
         card1.frontText = "You are amazing!"
         card1.backText = "Keep up the great work :)"
         
         card2.frontText = "You're doing a fantastic job!"
         card2.backText = "Don't get discouraged!"
         
-        card3.frontText = "Your app is going to be fantastic."
+        card3.frontText = "Your app is going to be bigger than bigger. Fundamentally unique. Extraordinarily useful."
         card3.backText = "Just focus on completing your goals! You can do it!!!"
         
-        cardList += [card1]
-        cardList += [card2]
-        cardList += [card3]
+        cardList.append(card1)
+        cardList.append(card2)
+        cardList.append(card3)
         
         currentCard = 0
     }

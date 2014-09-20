@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7085FFE7-C768-42E7-82F4-1C71498B620E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FigMint</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F3BD9D1491179886B62CE94238C33AE18A35FD68</key>
+		<string>https://github.com/smitchell-gt/FigMint.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FigMint.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F3BD9D1491179886B62CE94238C33AE18A35FD68</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/smitchell-gt/FigMint.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F3BD9D1491179886B62CE94238C33AE18A35FD68</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F3BD9D1491179886B62CE94238C33AE18A35FD68</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FigMint</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -74,60 +74,6 @@
                 </swipeGestureRecognizer>
             </objects>
         </scene>
-        <!--Card New View Controller-->
-        <scene sceneID="6yW-pu-XiO">
-            <objects>
-                <viewController id="Ihp-qQ-MHX" customClass="CardNewViewController" customModule="FigMint" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="t7z-2f-77u"/>
-                        <viewControllerLayoutGuide type="bottom" id="1uL-Jc-7La"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kr8-He-Rfz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←  Swipe to flip card  →" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wa-Cf-ydz">
-                                <rect key="frame" x="16" y="579" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bj-q3-3tw">
-                                <rect key="frame" x="16" y="20" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-z9-8WP">
-                                <rect key="frame" x="16" y="41" width="568" height="538"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="9Wa-Cf-ydz" firstAttribute="top" secondItem="g1I-z9-8WP" secondAttribute="bottom" id="4Mb-uQ-7c3"/>
-                            <constraint firstItem="1uL-Jc-7La" firstAttribute="top" secondItem="9Wa-Cf-ydz" secondAttribute="bottom" id="6vF-EO-yRl"/>
-                            <constraint firstItem="9Wa-Cf-ydz" firstAttribute="trailing" secondItem="kr8-He-Rfz" secondAttribute="trailingMargin" id="80g-l6-W3G"/>
-                            <constraint firstItem="g1I-z9-8WP" firstAttribute="leading" secondItem="kr8-He-Rfz" secondAttribute="leadingMargin" id="ERN-r5-TDP"/>
-                            <constraint firstItem="g1I-z9-8WP" firstAttribute="top" secondItem="3Bj-q3-3tw" secondAttribute="bottom" id="HZX-Ew-28h"/>
-                            <constraint firstItem="3Bj-q3-3tw" firstAttribute="top" secondItem="t7z-2f-77u" secondAttribute="bottom" id="Vd2-uf-foV"/>
-                            <constraint firstItem="3Bj-q3-3tw" firstAttribute="trailing" secondItem="kr8-He-Rfz" secondAttribute="trailingMargin" id="bGu-av-Ztl"/>
-                            <constraint firstItem="3Bj-q3-3tw" firstAttribute="leading" secondItem="kr8-He-Rfz" secondAttribute="leadingMargin" id="hAF-bw-WUR"/>
-                            <constraint firstItem="9Wa-Cf-ydz" firstAttribute="leading" secondItem="kr8-He-Rfz" secondAttribute="leadingMargin" id="mtb-1w-PMc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="g1I-z9-8WP" secondAttribute="trailing" id="oLU-F4-cVo"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="NewTextField" destination="g1I-z9-8WP" id="r5t-Uz-4Sg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UKs-N9-ocF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1653" y="136"/>
-        </scene>
         <!--Card Back View Controller-->
         <scene sceneID="OKg-eq-ALp">
             <objects>
@@ -197,21 +143,20 @@
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="HBx-NO-Dh7">
                     <connections>
-                        <segue destination="Ihp-qQ-MHX" kind="presentation" identifier="BackSwipeUp" id="HsQ-Ki-cTg"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="BackSwipeUp" id="GS3-H1-gvW"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="8x8-Y7-Mpe">
                     <connections>
-                        <segue destination="Ihp-qQ-MHX" kind="presentation" id="5Ak-cS-p4L"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="BackSwipeDown" id="Qzn-jR-u5Q"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="879" y="136"/>
+            <point key="canvasLocation" x="1023" y="136"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="I4T-A0-5Ac"/>
+        <segue reference="Qzn-jR-u5Q"/>
         <segue reference="gfw-3U-2c5"/>
-        <segue reference="HsQ-Ki-cTg"/>
     </inferredMetricsTieBreakers>
 </document>
