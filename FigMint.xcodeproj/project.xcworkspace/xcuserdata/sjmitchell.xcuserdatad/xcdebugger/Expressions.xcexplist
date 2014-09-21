@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FigMint.DeckListViewController.prepareForSegue (FigMint.DeckListViewController)(ObjectiveC.UIStoryboardSegue, sender : Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ():DeckListViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FigMint.DeckListViewController.tableView (FigMint.DeckListViewController)(ObjectiveC.UITableView, didSelectRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ():DeckListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(FigMint.Deck!)editDeckController.deck">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

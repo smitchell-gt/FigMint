@@ -11,6 +11,9 @@ import UIKit
 class CardBackViewController: UIViewController {
     
     @IBOutlet weak var backTextField: UITextView!
+    @IBOutlet weak var backImageField: UIImageView!
+    @IBOutlet weak var backButton: UIButton!
+    
     var cardList: [FlashCard]!
     var currentCard: Int!
     
@@ -31,8 +34,20 @@ class CardBackViewController: UIViewController {
             let newCard = segue.destinationViewController as CardFrontViewController
             newCard.isStart = false
             
+            if segue.identifier == "BackSwipeUp" {
+                cardList[currentCard].isDue = false
+                cardList[currentCard].nextBox()
+                cardList[currentCard].updateDueDate()
+            }
+            
+            if segue.identifier == "BackSwipeDown" {
+                cardList[currentCard].isDue = true
+                cardList[currentCard].resetBox()
+                cardList[currentCard].updateDueDate()
+            }
+            
             currentCard = currentCard.successor()
-            if (currentCard < cardList.endIndex) {
+            if (currentCard < cardList.count) {
                 if (currentCard % 3 == 0) {
                     newCard.endOfSet = true
                 }

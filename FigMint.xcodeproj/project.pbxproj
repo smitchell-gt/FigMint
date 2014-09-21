@@ -15,7 +15,12 @@
 		B9169D9B19CD17BE00AA20E4 /* FigMintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169D9A19CD17BE00AA20E4 /* FigMintTests.swift */; };
 		B9169DA519CD2B0C00AA20E4 /* CardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DA419CD2B0C00AA20E4 /* CardBackViewController.swift */; };
 		B9169DA719CD2B5A00AA20E4 /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DA619CD2B5A00AA20E4 /* FlashCard.swift */; };
-		B9169DA919CD7BDB00AA20E4 /* FlashCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DA819CD7BDB00AA20E4 /* FlashCardManager.swift */; };
+		B9169DA919CD7BDB00AA20E4 /* DeckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9169DA819CD7BDB00AA20E4 /* DeckManager.swift */; };
+		B918CBD719CE103E004DCFF4 /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918CBD619CE103E004DCFF4 /* DeckListViewController.swift */; };
+		B918CBD919CE212C004DCFF4 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918CBD819CE212C004DCFF4 /* Deck.swift */; };
+		B918CBDB19CE3AAF004DCFF4 /* AddDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918CBDA19CE3AAF004DCFF4 /* AddDeckViewController.swift */; };
+		B918CBDD19CE6F9C004DCFF4 /* EditDeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918CBDC19CE6F9C004DCFF4 /* EditDeckListViewController.swift */; };
+		B918CBDF19CE95B6004DCFF4 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918CBDE19CE95B6004DCFF4 /* AddCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +46,12 @@
 		B9169D9A19CD17BE00AA20E4 /* FigMintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigMintTests.swift; sourceTree = "<group>"; };
 		B9169DA419CD2B0C00AA20E4 /* CardBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBackViewController.swift; sourceTree = "<group>"; };
 		B9169DA619CD2B5A00AA20E4 /* FlashCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
-		B9169DA819CD7BDB00AA20E4 /* FlashCardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardManager.swift; sourceTree = "<group>"; };
+		B9169DA819CD7BDB00AA20E4 /* DeckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckManager.swift; sourceTree = "<group>"; };
+		B918CBD619CE103E004DCFF4 /* DeckListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
+		B918CBD819CE212C004DCFF4 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		B918CBDA19CE3AAF004DCFF4 /* AddDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDeckViewController.swift; sourceTree = "<group>"; };
+		B918CBDC19CE6F9C004DCFF4 /* EditDeckListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDeckListViewController.swift; sourceTree = "<group>"; };
+		B918CBDE19CE95B6004DCFF4 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +96,13 @@
 				B9169D8419CD17BE00AA20E4 /* AppDelegate.swift */,
 				B9169D8619CD17BE00AA20E4 /* CardFrontViewController.swift */,
 				B9169DA419CD2B0C00AA20E4 /* CardBackViewController.swift */,
-				B9169DA819CD7BDB00AA20E4 /* FlashCardManager.swift */,
+				B918CBD619CE103E004DCFF4 /* DeckListViewController.swift */,
+				B918CBDA19CE3AAF004DCFF4 /* AddDeckViewController.swift */,
+				B918CBDC19CE6F9C004DCFF4 /* EditDeckListViewController.swift */,
+				B918CBDE19CE95B6004DCFF4 /* AddCardViewController.swift */,
+				B9169DA819CD7BDB00AA20E4 /* DeckManager.swift */,
 				B9169DA619CD2B5A00AA20E4 /* FlashCard.swift */,
+				B918CBD819CE212C004DCFF4 /* Deck.swift */,
 				B9169D8819CD17BE00AA20E4 /* Main.storyboard */,
 				B9169D8B19CD17BE00AA20E4 /* Images.xcassets */,
 				B9169D8D19CD17BE00AA20E4 /* LaunchScreen.xib */,
@@ -170,6 +185,7 @@
 				TargetAttributes = {
 					B9169D7E19CD17BE00AA20E4 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 89JRG4TE28;
 					};
 					B9169D9319CD17BE00AA20E4 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -221,9 +237,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B918CBD919CE212C004DCFF4 /* Deck.swift in Sources */,
 				B9169D8719CD17BE00AA20E4 /* CardFrontViewController.swift in Sources */,
-				B9169DA919CD7BDB00AA20E4 /* FlashCardManager.swift in Sources */,
+				B918CBD719CE103E004DCFF4 /* DeckListViewController.swift in Sources */,
+				B918CBDD19CE6F9C004DCFF4 /* EditDeckListViewController.swift in Sources */,
+				B918CBDF19CE95B6004DCFF4 /* AddCardViewController.swift in Sources */,
+				B9169DA919CD7BDB00AA20E4 /* DeckManager.swift in Sources */,
 				B9169DA519CD2B0C00AA20E4 /* CardBackViewController.swift in Sources */,
+				B918CBDB19CE3AAF004DCFF4 /* AddDeckViewController.swift in Sources */,
 				B9169DA719CD2B5A00AA20E4 /* FlashCard.swift in Sources */,
 				B9169D8519CD17BE00AA20E4 /* AppDelegate.swift in Sources */,
 			);
@@ -419,6 +440,7 @@
 				B9169DA019CD17BE00AA20E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9169DA119CD17BE00AA20E4 /* Build configuration list for PBXNativeTarget "FigMintTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +449,7 @@
 				B9169DA319CD17BE00AA20E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
